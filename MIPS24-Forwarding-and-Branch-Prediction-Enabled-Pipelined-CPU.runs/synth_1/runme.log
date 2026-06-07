@@ -1,0 +1,723 @@
+
+*** Running vivado
+    with args -log TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 917.828 ; gain = 234.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/TOP.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/clk_div.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/clk_div.v:4]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'BTB' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/BTB.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Line' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Line.v:3]
+	Parameter ENA bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'Reg1' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Reg1' (2#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Reg' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Reg' (3#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Line' (4#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Line.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MAX8' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/MAX8.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MAX8' (5#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/MAX8.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PredictJump' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/predictJump.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Reg2' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Reg2' (6#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (7#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PredictJump' (8#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/predictJump.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'BTB' (9#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/BTB.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CS_dram' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/CS_dram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.runs/synth_1/.Xil/Vivado-17992-Matrix/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (10#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.runs/synth_1/.Xil/Vivado-17992-Matrix/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CS_dram' (11#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/CS_dram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/IFID.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (12#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/IFID.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SigHardCU' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SigHardCU.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SigHardCU.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SigHardCU.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'SigHardCU' (13#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SigHardCU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/RegFile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (14#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/RegFile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'R1R2Detect' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/DataRelationDetect.v:4]
+INFO: [Synth 8-6157] synthesizing module 'SrcReg' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SrcReg.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SrcReg.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SrcReg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'SrcReg' (15#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/SrcReg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'R1R2Detect' (16#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/DataRelationDetect.v:4]
+INFO: [Synth 8-6157] synthesizing module 'LoaduseDetect' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/LoaduseDetect.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'LoaduseDetect' (17#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/LoaduseDetect.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IDEX' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/IDEX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Reg4' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Reg4' (18#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Reg5' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg6.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Reg5' (19#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Reg6.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IDEX' (20#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/IDEX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (21#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/EXMEM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (22#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/EXMEM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DS_dram' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/DS_dram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.runs/synth_1/.Xil/Vivado-17992-Matrix/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (23#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.runs/synth_1/.Xil/Vivado-17992-Matrix/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DS_dram' (24#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/DS_dram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/MEMRB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (25#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/MEMRB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (26#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Display' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'seg7' [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/seg7.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (27#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/seg7.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Display' (28#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/Display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (29#1) [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/TOP.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 991.754 ; gain = 308.262
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 991.754 ; gain = 308.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 991.754 ; gain = 308.262
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 991.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu_0/rom/rom'
+Finished Parsing XDC File [c:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu_0/rom/rom'
+Parsing XDC File [c:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'cpu_0/ram/dram'
+Finished Parsing XDC File [c:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'cpu_0/ram/dram'
+Parsing XDC File [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/constrs_1/new/TOP.xdc]
+Finished Parsing XDC File [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/constrs_1/new/TOP.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/constrs_1/new/TOP.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1097.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1097.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1097.781 ; gain = 414.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1097.781 ; gain = 414.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cpu_0/rom/rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu_0/ram/dram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1097.781 ; gain = 414.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "jmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "SignedExt" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "BEQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BNE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALU_OP" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALU_SRC" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SysCALL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "R1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "R2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.srcs/sources_1/new/ALU.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1097.781 ; gain = 414.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 16    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 41    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 42    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 34    
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 8     
+	  14 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+	   9 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 16    
+	  14 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module Reg1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Line 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module MAX8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Reg2 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+Module BTB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   9 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 7     
+Module IFID 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module SigHardCU 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 12    
+	  14 Input      1 Bit        Muxes := 3     
+Module RegFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module SrcReg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 2     
+Module Reg4 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Reg5 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module IDEX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module EXMEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+Module MEMWB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 4     
+Module Display 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "ALU_OP" is below threshold of ROM address width. It will be mapped to LUTs
+DSP Report: Generating DSP R0, operation Mode is: A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: Generating DSP R0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: Generating DSP R0, operation Mode is: A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: Generating DSP R0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+WARNING: [Synth 8-3917] design TOP has port seg_l[7] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port seg_r[7] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[0]' (FDCE) to 'cpu_0/IDEX_0/JumpAddr/dout_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu_0/IDEX_0/JumpAddr/dout_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[16]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[17]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[18]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[19]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[20]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[21]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[22]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[23]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[24]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[24]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[25]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[25]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[26]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[26]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[27]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[27]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[28]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[28]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[29]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/Imm/dout_reg[30]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IFID_0/PC4/dout_reg[0]' (FDCE) to 'cpu_0/IFID_0/PC/dout_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[12]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[13]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[14]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[15]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[16]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[17]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[2]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[3]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[4]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[5]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[6]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[7]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[8]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[9]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[10]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/JumpAddr/dout_reg[11]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/BranchAddr/dout_reg[0]' (FDCE) to 'cpu_0/IDEX_0/PC/dout_reg[0]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/shamt/dout_reg[4]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/shamt/dout_reg[3]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/shamt/dout_reg[2]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/shamt/dout_reg[1]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cpu_0/IDEX_0/shamt/dout_reg[0]' (FDCE) to 'cpu_0/IDEX_0/Imm/dout_reg[6]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1097.781 ; gain = 414.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------+-----------+----------------------+--------------+
+|TOP         | cpu_0/RegFile_0/rs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1125.766 ; gain = 442.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1132.117 ; gain = 448.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------+-----------+----------------------+--------------+
+|TOP         | cpu_0/RegFile_0/rs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1188.641 ; gain = 505.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_1 |         1|
+|2     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |dist_mem_gen_1 |     1|
+|3     |BUFG           |     2|
+|4     |CARRY4         |   528|
+|5     |DSP48E1        |     3|
+|6     |LUT1           |   111|
+|7     |LUT2           |   369|
+|8     |LUT3           |  1121|
+|9     |LUT4           |   289|
+|10    |LUT5           |   410|
+|11    |LUT6           |   916|
+|12    |RAM32M         |    12|
+|13    |FDCE           |  1353|
+|14    |FDRE           |    41|
+|15    |IBUF           |     2|
+|16    |OBUF           |    24|
++------+---------------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------+------+
+|      |Instance            |Module         |Cells |
++------+--------------------+---------------+------+
+|1     |top                 |               |  5245|
+|2     |  clk_0             |clk_div        |    56|
+|3     |  cpu_0             |CPU            |  5156|
+|4     |    ALU_0           |ALU            |  1424|
+|5     |    BTB_0           |BTB            |  1508|
+|6     |      Line_0        |Line           |   285|
+|7     |        Addr        |Reg_96         |    64|
+|8     |        count       |Reg_97         |   173|
+|9     |        countReset  |Reg1_98        |     1|
+|10    |        tag         |Reg_99         |    32|
+|11    |        valid       |Reg1_100       |     6|
+|12    |      Line_1        |Line_39        |   130|
+|13    |        Addr        |Reg_91         |    32|
+|14    |        count       |Reg_92         |    48|
+|15    |        countReset  |Reg1_93        |     1|
+|16    |        tag         |Reg_94         |    32|
+|17    |        valid       |Reg1_95        |     8|
+|18    |      Line_2        |Line_40        |   194|
+|19    |        Addr        |Reg_86         |    32|
+|20    |        count       |Reg_87         |   116|
+|21    |        countReset  |Reg1_88        |     1|
+|22    |        tag         |Reg_89         |    32|
+|23    |        valid       |Reg1_90        |     4|
+|24    |      Line_3        |Line_41        |   191|
+|25    |        Addr        |Reg_81         |    96|
+|26    |        count       |Reg_82         |    48|
+|27    |        countReset  |Reg1_83        |     1|
+|28    |        tag         |Reg_84         |    32|
+|29    |        valid       |Reg1_85        |     5|
+|30    |      Line_4        |Line_42        |   130|
+|31    |        Addr        |Reg_76         |    32|
+|32    |        count       |Reg_77         |    52|
+|33    |        countReset  |Reg1_78        |     1|
+|34    |        tag         |Reg_79         |    32|
+|35    |        valid       |Reg1_80        |     4|
+|36    |      Line_5        |Line_43        |   126|
+|37    |        Addr        |Reg_71         |    32|
+|38    |        count       |Reg_72         |    48|
+|39    |        countReset  |Reg1_73        |     1|
+|40    |        tag         |Reg_74         |    32|
+|41    |        valid       |Reg1_75        |     4|
+|42    |      Line_6        |Line_44        |   301|
+|43    |        Addr        |Reg_66         |    64|
+|44    |        count       |Reg_67         |   190|
+|45    |        countReset  |Reg1_68        |     1|
+|46    |        tag         |Reg_69         |    32|
+|47    |        valid       |Reg1_70        |     5|
+|48    |      Line_7        |Line_45        |   125|
+|49    |        Addr        |Reg_61         |    33|
+|50    |        count       |Reg_62         |    48|
+|51    |        countReset  |Reg1_63        |     1|
+|52    |        tag         |Reg_64         |    32|
+|53    |        valid       |Reg1_65        |     2|
+|54    |      PredictJump_0 |PredictJump    |     4|
+|55    |        state       |Reg2_60        |     4|
+|56    |      PredictJump_1 |PredictJump_46 |     3|
+|57    |        state       |Reg2_59        |     3|
+|58    |      PredictJump_2 |PredictJump_47 |     4|
+|59    |        state       |Reg2_58        |     4|
+|60    |      PredictJump_3 |PredictJump_48 |     3|
+|61    |        state       |Reg2_57        |     3|
+|62    |      PredictJump_4 |PredictJump_49 |     3|
+|63    |        state       |Reg2_56        |     3|
+|64    |      PredictJump_5 |PredictJump_50 |     3|
+|65    |        state       |Reg2_55        |     3|
+|66    |      PredictJump_6 |PredictJump_51 |     3|
+|67    |        state       |Reg2_54        |     3|
+|68    |      PredictJump_7 |PredictJump_52 |     3|
+|69    |        state       |Reg2_53        |     3|
+|70    |    EXMEM_0         |EXMEM          |   108|
+|71    |      ALU_Result    |Reg_30         |    32|
+|72    |      JAL           |Reg1_31        |     1|
+|73    |      MemWrite      |Reg1_32        |     1|
+|74    |      MemtoReg      |Reg1_33        |     1|
+|75    |      PC            |Reg_34         |    32|
+|76    |      RegWrite      |Reg1_35        |     1|
+|77    |      Rt            |Reg_36         |    32|
+|78    |      WA            |Reg5_37        |     7|
+|79    |      halt          |Reg1_38        |     1|
+|80    |    IDEX_0          |IDEX           |  1213|
+|81    |      A             |Reg_11         |    32|
+|82    |      ALU_OP        |Reg4           |   102|
+|83    |      ALU_SRC       |Reg1_12        |     1|
+|84    |      B             |Reg_13         |    32|
+|85    |      BEQ           |Reg1_14        |     2|
+|86    |      BNE           |Reg1_15        |     1|
+|87    |      BranchAddr    |Reg_16         |    61|
+|88    |      Imm           |Reg_17         |   377|
+|89    |      JAL           |Reg1_18        |     1|
+|90    |      JumpAddr      |Reg_19         |    14|
+|91    |      MemWrite      |Reg1_20        |     1|
+|92    |      MemtoReg      |Reg1_21        |     1|
+|93    |      PC            |Reg_22         |   151|
+|94    |      PredictJump   |Reg1_23        |    33|
+|95    |      R1Select      |Reg2           |   278|
+|96    |      R2Select      |Reg2_24        |    65|
+|97    |      RegWrite      |Reg1_25        |     2|
+|98    |      SysCALL       |Reg1_26        |     3|
+|99    |      WA            |Reg5_27        |    44|
+|100   |      jmp           |Reg1_28        |     1|
+|101   |      jr            |Reg1_29        |    11|
+|102   |    IFID_0          |IFID           |   269|
+|103   |      IR            |Reg_7          |   137|
+|104   |      PC            |Reg_8          |    64|
+|105   |      PC4           |Reg_9          |    66|
+|106   |      PredictJump   |Reg1_10        |     2|
+|107   |    LED             |Reg            |   102|
+|108   |    MEMWB_0         |MEMWB          |   140|
+|109   |      ALU_Result    |Reg_1          |    64|
+|110   |      JAL           |Reg1           |     1|
+|111   |      MemtoReg      |Reg1_2         |     1|
+|112   |      PC            |Reg_3          |    33|
+|113   |      RS            |Reg_4          |    32|
+|114   |      RegWrite      |Reg1_5         |     1|
+|115   |      WA            |Reg5           |     6|
+|116   |      halt          |Reg1_6         |     2|
+|117   |    PC              |Reg_0          |   187|
+|118   |    RegFile_0       |RegFile        |    77|
+|119   |    ram             |DS_dram        |    32|
+|120   |    rom             |CS_dram        |    64|
+|121   |  dis_0             |Display        |     5|
++------+--------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1200.090 ; gain = 410.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1200.090 ; gain = 516.598
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1200.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 543 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1200.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1200.090 ; gain = 787.895
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1200.090 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU/MIPS24-Forwarding-and-Branch-Prediction-Enabled-Pipelined-CPU.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 12:07:12 2026...

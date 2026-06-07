@@ -1,0 +1,108 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Jun  7 12:07:54 2026
+| Host         : Matrix running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    30 |
+|    Minimum number of control sets                        |    30 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    79 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    30 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    28 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            3 |
+| No           | No                    | Yes                    |             280 |           83 |
+| No           | Yes                   | No                     |              35 |            9 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1072 |          398 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                           Enable Signal                                          |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                                                                  |                                          |                2 |              2 |
+|  clk_0/CLK     |                                                                                                  |                                          |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                                                  | clk_0/clear                              |                4 |             16 |
+|  clk_IBUF_BUFG |                                                                                                  | clk_0/cnt_10ms[0]_i_1_n_0                |                5 |             19 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_7/Addr/rst              |               11 |             24 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_1/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_2/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_0/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_7/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_5/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_6/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_3/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG |                                                                                                  | cpu_0/BTB_0/Line_4/countReset/dout_reg_0 |                9 |             32 |
+|  clk_10ms_BUFG | cpu_0/IDEX_0/WA/dout_reg_0[0]                                                                    | cpu_0/BTB_0/Line_7/Addr/rst              |               22 |             32 |
+|  clk_10ms_BUFG | cpu_0/IDEX_0/SysCALL/dout_reg_0[0]                                                               | cpu_0/BTB_0/Line_7/Addr/rst              |               12 |             32 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_1/valid/dout_reg_3[0]                                                           | cpu_0/BTB_0/Line_7/Addr/rst              |               24 |             65 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_0/valid/E[0]                                                                    | cpu_0/BTB_0/Line_7/Addr/rst              |               20 |             65 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_0/valid/dout_reg_2[0]                                                           | cpu_0/BTB_0/Line_7/Addr/rst              |               22 |             65 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_0/count/E[0]                                                                    | cpu_0/BTB_0/Line_7/Addr/rst              |               17 |             65 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_0/count/dout_reg_4[0]                                                           | cpu_0/BTB_0/Line_7/Addr/rst              |               22 |             65 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_0/count/dout_reg_5[0]                                                           | cpu_0/BTB_0/Line_7/Addr/rst              |               19 |             65 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_5/valid/dout_reg_1[0]                                                           | cpu_0/BTB_0/Line_7/Addr/rst              |               20 |             65 |
+|  clk_10ms_BUFG | cpu_0/BTB_0/Line_3/valid/dout_reg_1[0]                                                           | cpu_0/BTB_0/Line_7/Addr/rst              |               21 |             65 |
+|  clk_10ms_BUFG | cpu_0/IDEX_0/WA/dout_reg[0]                                                                      | cpu_0/BTB_0/Line_7/Addr/rst              |               23 |             95 |
+| ~clk_10ms_BUFG | cpu_0/MEMWB_0/RegWrite/RegWriteOut                                                               |                                          |               12 |             96 |
+|  clk_10ms_BUFG | cpu_0/ram/dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_0_0_i_1_n_0    |                                          |               32 |            128 |
+|  clk_10ms_BUFG | cpu_0/ram/dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_0_0_i_1_n_0  |                                          |               32 |            128 |
+|  clk_10ms_BUFG | cpu_0/ram/dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_0_0_i_1_n_0  |                                          |               32 |            128 |
+|  clk_10ms_BUFG | cpu_0/ram/dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_0_0_i_1_n_0 |                                          |               32 |            128 |
+|  clk_10ms_BUFG | cpu_0/MEMWB_0/halt/E[0]                                                                          | cpu_0/BTB_0/Line_7/Addr/rst              |              176 |            393 |
++----------------+--------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+
+
